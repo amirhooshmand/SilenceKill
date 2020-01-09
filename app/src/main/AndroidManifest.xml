@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ir.amirhooshmand.silencekill">
 
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,13 +26,17 @@
 
         <receiver
             android:name=".receiver.RingerReceiver"
+            android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.ChangeRingerModeReceiver" />
+        <receiver
+            android:name=".receiver.ChangeRingerModeReceiver"
+            android:enabled="true" />
     </application>
 
 </manifest>
