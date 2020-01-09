@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SilenceKill</string>
+    <string name="minute">دقیقه %s</string>
+    <string name="do_not_disturb_permission">DO NOT DISTURB PERMISSION</string>
+    <string name="do_not_disturb_hint">برای اینکه بتونیم گوشی رو از سایلنت در بیاریم نیازه تا به این اجازه دسترسی داشته باشیم</string>
+    <string name="allow">اجازه دادن</string>
+    <string name="app_version">نسخه 0.5</string>
+</resources>
