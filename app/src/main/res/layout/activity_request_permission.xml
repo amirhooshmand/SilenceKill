@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkColor"
+    tools:context=".view.RequestPermissionActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_not_disturb_permission"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_not_disturb_hint"
+            android:textColor="@color/permissionHintTextColor"
+            android:gravity="center_horizontal"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="346dp"
+            android:src="@drawable/do_not_disturb" />
+
+        <Button
+            android:id="@+id/permission_allow_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:text="@string/allow"
+            android:textColor="@color/np_textColor"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_background"
+            android:typeface="monospace" />
+    </LinearLayout>
+</RelativeLayout>

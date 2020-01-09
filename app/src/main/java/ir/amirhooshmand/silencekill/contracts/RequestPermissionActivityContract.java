@@ -1,16 +1,16 @@
 package ir.amirhooshmand.silencekill.contracts;
 
-public interface SplashActivityContract {
+public interface RequestPermissionActivityContract {
 
     interface View {
         void initView();
 
-        void openPermissionActivity();
-
         void openMainActivity();
+        void openDoNotDisturbActivityForResult();
     }
 
     interface Presenter {
-
+        void onAllowClicked();
+        void onPermissionResult();
     }
 }

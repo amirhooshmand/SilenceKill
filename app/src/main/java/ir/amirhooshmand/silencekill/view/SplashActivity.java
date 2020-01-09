@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.jaeger.library.StatusBarUtil;
@@ -35,6 +36,14 @@ public class SplashActivity extends AppCompatActivity implements SplashActivityC
     }
 
     public void openPermissionActivity() {
+        Intent intent = new Intent(this, RequestPermissionActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
+    public void openMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

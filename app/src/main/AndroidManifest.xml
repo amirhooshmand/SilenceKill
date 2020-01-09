@@ -24,6 +24,7 @@
         </activity>
 
         <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.RequestPermissionActivity" />
 
         <receiver
             android:name=".receiver.RingerReceiver"
